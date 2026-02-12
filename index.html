@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pariwar Program - Join Now</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            min-height: 100vh;
+            background: #1a1a1a;
+        }
+
+        .flyer-container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            background-image: url('https://tmmcommunications2026-max.github.io/pariwar-program/pariwar-flyer.png');
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            animation: fadeIn 0.8s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Clickable overlay for the button in the background image */
+        .button-overlay {
+            position: absolute;
+            bottom: 5%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 280px;
+            height: 60px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border-radius: 30px;
+        }
+
+        /* Visual feedback on hover - optional subtle effect */
+        .button-overlay:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .button-overlay:active {
+            transform: translateX(-50%) scale(0.98);
+        }
+
+        /* Desktop - Large screens */
+        @media (min-width: 1200px) {
+            .button-overlay {
+                width: 300px;
+                height: 70px;
+                bottom: 6%;
+            }
+        }
+
+        /* Tablet - Medium screens */
+        @media (max-width: 1024px) {
+            .button-overlay {
+                width: 260px;
+                height: 55px;
+                bottom: 5%;
+            }
+        }
+
+        /* Tablet Portrait and Small Laptops */
+        @media (max-width: 768px) {
+            .flyer-container {
+                background-size: cover;
+            }
+
+            .button-overlay {
+                width: 240px;
+                height: 50px;
+                bottom: 4%;
+            }
+        }
+
+        /* Mobile - Small screens */
+        @media (max-width: 600px) {
+            .button-overlay {
+                width: 200px;
+                height: 45px;
+                bottom: 3%;
+            }
+        }
+
+        /* Mobile - Extra small screens */
+        @media (max-width: 480px) {
+            .button-overlay {
+                width: 180px;
+                height: 40px;
+                bottom: 2.5%;
+            }
+        }
+
+        /* Mobile - Very small screens */
+        @media (max-width: 360px) {
+            .button-overlay {
+                width: 160px;
+                height: 38px;
+                bottom: 2%;
+            }
+        }
+
+        /* Landscape orientation adjustments */
+        @media (max-height: 600px) and (orientation: landscape) {
+            .flyer-container {
+                height: auto;
+                min-height: 100vh;
+            }
+
+            .button-overlay {
+                bottom: 3%;
+                width: 200px;
+                height: 45px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="flyer-container">
+        <a href="https://www.triveni-mandal.org/new-pariwar-participation-form" 
+           class="button-overlay" 
+           target="_blank" 
+           rel="noopener"
+           aria-label="Register for Pariwar Program"></a>
+    </div>
+</body>
+</html>
